@@ -8,18 +8,25 @@ public class Calculadora {
         double a = sc.nextDouble();
         double b = sc.nextDouble();
 
-        double suma = suma(a,b);
-        double resta = a - b;
-        double multiplicacion = a * b;
-        double division = a / b;
-
-        System.out.println("Suma:" + suma);
-        System.out.println("Resta:" + resta);
-        System.out.println("Multiplicacion:" + multiplicacion);
-        System.out.println("Division:" + division);
+        System.out.println("Suma:" + suma(a, b));
+        System.out.println("Resta:" + resta(a, b));
+        System.out.println("Multiplicacion:" + multiplicacion(a, b));
+        System.out.println("Division:" + division(a, b));
     }
-    public static double suma(double x, double y){
 
-        return x+y;
+    public static double suma(double x, double y) {
+        return x + y;
+    }
+
+    public static double resta(double x, double y) {
+        return x - y;
+    }
+
+    public static double multiplicacion(double x, double y) {
+        return x * y;
+    }
+
+    public static double division(double x, double y) {
+        return x / y;
     }
 }
