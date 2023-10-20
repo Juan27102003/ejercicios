@@ -25,6 +25,8 @@ public class RellenandoConPuntos {
                 for (int i=0;i<=n;i++){
                     if (n>cad.length()){
                         cad="." + cad;
+                    }else if (n==cad.length()){
+                        System.out.println("La cadena no cabe");
                     }
                 }
                 aux=1;
@@ -32,6 +34,8 @@ public class RellenandoConPuntos {
                 for (int i=0;i<=n;i++){
                     if (n>cad.length()){
                         cad=cad + ".";
+                    }else if (n==cad.length()){
+                        System.out.println("La cadena no cabe");
                     }
                 }
                 aux=1;
