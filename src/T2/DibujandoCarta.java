@@ -79,7 +79,7 @@ public class DibujandoCarta {
                     pintarFila('|',' ',"",14, 'D');
                 }
 
-                pintarFila('|', ' ', palo, 14, 'I');
+                pintarFila('|', ' ', numero, 14, 'I');
             }
         }
 
