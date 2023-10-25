@@ -1,4 +1,4 @@
-package T2;
+package AceptaElReto;
 
 import java.util.Scanner;
 
