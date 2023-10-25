@@ -66,23 +66,22 @@ public class DibujandoCarta {
 
     }
 
-    public static void dibujarCarta(String numero, String palo){
+    public static void dibujarCarta(String numero, String palo) {
 
         for (int i = 0; i < 2; i++) {
-            pintarFila('+','-',"",14, 'D');
+            pintarFila('+', '-', "", 14, 'D');
 
-            if(i == 0){
-                pintarFila('|',' ',numero,14, 'D');
-                pintarFila('|',' ',palo,14, 'D');
+            if (i == 0) {
+                pintarFila('|', ' ', numero, 14, 'D');
+                pintarFila('|', ' ', palo, 14, 'D');
 
-                for (int j = 0; j < 4; j++){
-                    pintarFila('|',' ',"",14, 'D');
+                for (int j = 0; j < 4; j++) {
+                    pintarFila('|', ' ', "", 14, 'D');
                 }
 
                 pintarFila('|', ' ', numero, 14, 'I');
             }
         }
-
 
 
         // pintarFila('+','-',"",14, 'D');
@@ -104,10 +103,10 @@ public class DibujandoCarta {
 
     }
 
-    public static void pintarFila(char delimitador, char relleno, String contenido, int tamano, char direccion){
+    public static void pintarFila(char delimitador, char relleno, String contenido, int tamano, char direccion) {
 
-        while (contenido.length() < (tamano-4)){
-            if(direccion == 'D')
+        while (contenido.length() < (tamano - 4)) {
+            if (direccion == 'D')
                 contenido = contenido + String.valueOf(relleno);
             else
                 contenido = String.valueOf(relleno) + contenido;

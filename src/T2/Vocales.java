@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Vocales {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        char car=sc.nextLine().charAt(0);
+        Scanner sc = new Scanner(System.in);
+        char car = sc.nextLine().charAt(0);
 
         if ((car == 'a') || (car == 'A'))
             System.out.println(car + " es una vocal");
@@ -20,15 +20,19 @@ public class Vocales {
         else
             System.out.println(car + " no es una vocal");
 
-        switch (car)
-        {
-            case 'a': case 'A':
-            case 'e': case 'E':
-            case 'i': case 'I':
-            case 'o': case 'O':
-            case 'u': case 'U':
-            System.out.println(car + " es una vocal");
-            break;
+        switch (car) {
+            case 'a':
+            case 'A':
+            case 'e':
+            case 'E':
+            case 'i':
+            case 'I':
+            case 'o':
+            case 'O':
+            case 'u':
+            case 'U':
+                System.out.println(car + " es una vocal");
+                break;
             default:
                 System.out.println(car + " no es una vocal");
         }

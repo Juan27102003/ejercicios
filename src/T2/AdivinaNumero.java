@@ -17,7 +17,7 @@ public class AdivinaNumero {
                 cont = 0;
                 break;
 
-            }else System.out.println("Te quedan " + i + " oportunidades");
+            } else System.out.println("Te quedan " + i + " oportunidades");
         }
         if (cont == 1) {
             System.out.println("No has acertado el numero era " + num);

@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Rango {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int opcion=sc.nextInt();
-        switch (opcion){
+        Scanner sc = new Scanner(System.in);
+        int opcion = sc.nextInt();
+        switch (opcion) {
             case 0:
                 System.out.println("Cero");
                 break;
@@ -21,7 +21,7 @@ public class Rango {
         }
         System.out.println("Segundo switch:");
 
-        switch (opcion){
+        switch (opcion) {
             case 0:
             case 1:
             case 2:
