@@ -47,8 +47,7 @@ public class JuegoSetYPartido {
                     if (contA==0){
                         contB = 1;
                         System.out.println("Ventaja jugador 2");
-                    } else if (contB == 1) {
-                } else {
+                    } else {
                     contA = 0;
                 }
                 }
