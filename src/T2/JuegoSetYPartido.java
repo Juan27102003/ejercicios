@@ -13,48 +13,6 @@ public class JuegoSetYPartido {
         do {
             System.out.println("Juego: " + puntoA + "-" + puntoB);
             punto = sc.next();
-           /* if (punto.equals("A")) {
-                if (puntoA == 0) {
-                    puntoA = 15;
-                } else if (puntoA == 15) {
-                    puntoA = 30;
-                } else if (puntoA == 30) {
-                    puntoA = 40;
-                } else if (puntoA==40) {
-                    puntoA=45;
-                }
-            }
-            if (punto.equals("B")) {
-                if (puntoB == 0) {
-                    puntoB = 15;
-                } else if (puntoB == 15) {
-                    puntoB = 30;
-                } else if (puntoB == 30) {
-                    puntoB = 40;
-                }else if (puntoB==40){
-                    puntoB=45;
-                }
-            }
-            if (puntoA<45&&puntoB<45&&contA==0&&contB==0) System.out.println("Juego: " + puntoA + "-" + puntoB);
-
-            if (puntoA==45&&puntoB==40&&punto.equals("A")) {
-                contA=1;
-                System.out.println("Ventaja jugador 1");
-            } else if (puntoB==45&&puntoA==40&&punto.equals("B")) {
-                contB=1;
-                System.out.println("Ventaja jugador 2");
-            }
-            if (puntoA == 45 && puntoB != 45&&contA==0){
-                System.out.println("Ha ganado el jugador 1");
-                contA=10;
-            } else if (puntoB == 45 && puntoA != 45&&contB==0){
-                System.out.println("Ha ganado el jugador 2");
-                contB=10;
-            }
-            if (contB==1&&punto.equals("A")){
-                contB=0;
-            }*/
-
             if (punto.equals("A")) {
                 if (puntoA == 0) {
                     puntoA = 15;
