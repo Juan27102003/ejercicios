@@ -5,10 +5,7 @@ import java.util.Scanner;
 public class ComoSeEscribe {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int num;
-        int cent;
-        int dec;
-        int unid;
+        int num, cent, dec, unid;
         String resultado = "";
         do {
             num = sc.nextInt();
@@ -112,7 +109,7 @@ public class ComoSeEscribe {
             }
 
             System.out.println(resultado);
-            resultado="";
+            resultado = "";
         } while (num > 0 && num < 1000);
     }
 }
