@@ -1,6 +1,6 @@
 package T3;
 
-public class MainComplejo {
+public class ComplejoMain {
     public static void main(String[] args) {
         Complejo c1 = new Complejo();
         c1.real = 3;

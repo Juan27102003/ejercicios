@@ -9,14 +9,6 @@ public class Main {
         System.out.println(p);
         System.out.println("El area es " + r.calcularArea());
         System.out.println("El perimetro es " + r.calcularPerimetro());
-        CalculadoraAreas cal=new CalculadoraAreas();
-        cal.imprimirArea(10);
-        cal.imprimirArea(10,5);
-        cal.imprimirArea(8,12,5);
         */
-        Contacto c = new Contacto();
-        c.nombre = "Juan Garcia";
-        c.telefono = "980765432";
-        System.out.println(c);
     }
 }
