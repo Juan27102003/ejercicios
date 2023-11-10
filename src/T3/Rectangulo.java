@@ -4,13 +4,21 @@ public class Rectangulo {
     double base;
     double altura;
 
-    public Rectangulo(double base, double altura) {
+    public Rectangulo(double base, double altura) throws Exception {
+        if (base<0||altura<0){
+            throw new IllegalArgumentException("No se puden introducir valores negativos");
+        }
         this.base = base;
         this.altura = altura;
     }
 
     public double getBase() {
         return base;
+    }
+
+    public Rectangulo(double base) {
+        this.base = base;
+        this.altura = base;
     }
 
     public void setBase(double base) {
