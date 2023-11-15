@@ -36,8 +36,6 @@ public class CuentaBancaria2 {private String titular;
         return cantidad;
     }
     public String toString() {
-        return "Cuenta " + numeroCuenta +
-                " de " + titular + " con " +
-                saldo + " euros";
+        return "Cuenta " + numeroCuenta + " de " + titular + " con " + saldo + " euros";
 }
 }
