@@ -118,7 +118,7 @@ public class Persona2 {
             System.out.println("Esta flaco");
             return -1;
         } else if (IMC >= 20 && IMC <= 25) {
-            System.out.println("Esta bien");
+            System.out.println("Esta en su peso ideal");
             return 0;
         } else System.out.println("Esta gordo");
         return 1;
