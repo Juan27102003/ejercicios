@@ -1,19 +1,19 @@
 package T3.Arrays;
 
 public class ModuloProfesional {
-    private String codigo;
+    private int codigo;
     private String descripcion;
 
-    public ModuloProfesional(String codigo, String descripcion) {
+    public ModuloProfesional(int codigo, String descripcion) {
         this.codigo = codigo;
         this.descripcion = descripcion;
     }
 
-    public String getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(String codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
