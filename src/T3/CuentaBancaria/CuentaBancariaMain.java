@@ -1,4 +1,6 @@
-package T3;
+package T3.CuentaBancaria;
+
+import T3.CuentaBancaria.CuentaBancaria3;
 
 public class CuentaBancariaMain {
     public static void main(String[] args) throws Exception {

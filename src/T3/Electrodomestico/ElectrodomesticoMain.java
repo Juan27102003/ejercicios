@@ -1,4 +1,6 @@
-package T3;
+package T3.Electrodomestico;
+
+import T3.Electrodomestico.Electrodomestico;
 
 public class ElectrodomesticoMain {
     public static void main(String[] args) {

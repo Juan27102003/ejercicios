@@ -1,4 +1,4 @@
-package T3;
+package T3.CuentaBancaria;
 
 public class CuentaBancaria2 {private String titular;
     private String numeroCuenta;

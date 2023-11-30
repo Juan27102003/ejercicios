@@ -1,4 +1,4 @@
-package T3;
+package T3.Electrodomestico;
 
 public class Electrodomestico {
     private double precioBase = 100;
