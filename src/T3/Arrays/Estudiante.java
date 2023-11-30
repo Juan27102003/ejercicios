@@ -58,7 +58,7 @@ public class Estudiante {
         this.modulos = modulos;
     }
     public void agregarModulos(ModuloProfesional modulo){
-    modulos.add(modulo);
+        if (!modulos.contains(modulo)) modulos.add(modulo);
     }
     public void eliminarModulos(ModuloProfesional modulo){
         modulos.remove(modulo);

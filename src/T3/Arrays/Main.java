@@ -9,11 +9,15 @@ public class Main {
         ModuloProfesional m2 = new ModuloProfesional(2, "Lengua");
         ModuloProfesional m3 = new ModuloProfesional(3, "Historia");
         ModuloProfesional m4 = new ModuloProfesional(4, "Fisica");
+        ModuloProfesional m5 = new ModuloProfesional(4, "Fisica");
+        ModuloProfesional m6 = new ModuloProfesional(2, "Lengua");
         Estudiante e1 = new Estudiante("Juan", "Garcia", "26578930G", 20);
         e1.agregarModulos(m1);
         e1.agregarModulos(m2);
         e1.agregarModulos(m3);
         e1.agregarModulos(m4);
+        e1.agregarModulos(m5);
+        e1.eliminarModulos(m6);
         List<ModuloProfesional> modulos = e1.getModulos();
         for (ModuloProfesional m : modulos) {
             System.out.println("Modulos:" + m.getCodigo() + " - " + m.getDescripcion());
@@ -28,7 +32,6 @@ public class Main {
         nombre = "Maria";
         String nombre1 = e1.getNombre();
         System.out.println("Nombre:" + nombre1);
-        ModuloProfesional m5 = new ModuloProfesional(1, "Mates");
         e1.agregarModulos(m5);
         e1.eliminarModulos(m5);
         modulos2 = e1.getModulos();
