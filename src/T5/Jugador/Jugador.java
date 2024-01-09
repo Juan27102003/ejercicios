@@ -1,4 +1,4 @@
-package T5;
+package T5.Jugador;
 
 public class Jugador {
     private String nombre;

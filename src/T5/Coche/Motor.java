@@ -1,4 +1,4 @@
-package T5;
+package T5.Coche;
 
 public class Motor {
     private String tipo;
