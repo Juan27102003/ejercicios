@@ -1,6 +1,6 @@
 package T5.Ficheros;
 
-public class Imagen extends Almacenable {
+public class Imagen implements Rotable,Almacenable {
     public int altura;
     public int anchura;
 
@@ -33,5 +33,15 @@ public class Imagen extends Almacenable {
     @Override
     public void recuperar(String nombreFichero) {
         System.out.println("Cargando imagen desde " + nombreFichero);
+    }
+
+    @Override
+    public void rotarSentidoAgujas() {
+        System.out.println("Rotando imagen 90º");
+    }
+
+    @Override
+    public void rotarSentidoContrarioAgujas() {
+        System.out.println("Rotando imagen -90º");
     }
 }
