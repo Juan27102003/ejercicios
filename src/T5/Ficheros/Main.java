@@ -1,5 +1,8 @@
 package T5.Ficheros;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Imagen i=new Imagen(200,200);
@@ -12,5 +15,25 @@ public class Main {
 
         i.rotarSentidoAgujas();
         i.rotarSentidoContrarioAgujas();
+
+        List<Rotable> lista =new ArrayList<>();
+
+        lista.add(i);
+        //lista.add(d);
+
+        listar(lista);
+    }
+    public static void listar(List<Rotable> lista){
+        for (Rotable l:lista){
+            l.rotarSentidoAgujas();
+        }
+        /*
+        for (int i=0;i<lista.size();i++){
+            Object l=lista.get(i);
+            if (lista.get(i) instanceof Rotable){
+                Rotable l=(Rotable) lista.get(i);
+                l.rotarSentidoAgujas();
+            }
+        }*/
     }
 }

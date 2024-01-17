@@ -37,7 +37,7 @@ public class Imagen implements Rotable,Almacenable {
 
     @Override
     public void rotarSentidoAgujas() {
-        System.out.println("Rotando imagen 90º");
+        System.out.println("Rotando imagen +90º");
     }
 
     @Override
