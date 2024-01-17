@@ -10,6 +10,7 @@ public class Main {
         d.guardar("documento.txt");
         d.recuperar("documento.txt");
 
+        i.rotarSentidoAgujas();
         i.rotarSentidoContrarioAgujas();
     }
 }

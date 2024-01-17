@@ -1,6 +1,6 @@
 package T5.Ficheros;
 
-public class DocumentoTexto extends Almacenable {
+public class DocumentoTexto implements Almacenable {
     public String contenido;
 
     public DocumentoTexto(String contenido) {
