@@ -22,10 +22,14 @@ public class Main {
         //lista.add(d);
 
         listar(lista);
+        System.out.println(i.describir());
+
     }
     public static void listar(List<Rotable> lista){
         for (Rotable l:lista){
             l.rotarSentidoAgujas();
+            l.rotar360Grados();
+            System.out.println(Rotable.radianesAGrados(Math.PI/2));
         }
         /*
         for (int i=0;i<lista.size();i++){

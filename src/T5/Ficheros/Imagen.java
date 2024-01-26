@@ -1,6 +1,6 @@
 package T5.Ficheros;
 
-public class Imagen implements Rotable,Almacenable {
+public class Imagen implements Rotable, Almacenable {
     public int altura;
     public int anchura;
 
@@ -43,5 +43,10 @@ public class Imagen implements Rotable,Almacenable {
     @Override
     public void rotarSentidoContrarioAgujas() {
         System.out.println("Rotando imagen -90º");
+    }
+
+    @Override
+    public String describir() {
+        return "Imagen es " + Rotable.super.describir() + " y " + Almacenable.super.describir();
     }
 }
