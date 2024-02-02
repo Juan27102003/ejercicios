@@ -1,8 +1,8 @@
 package T5.FigurasGeometricas;
 
 public abstract class Triangulo extends FiguraGeometrica {
-    private final double base;
-    private final double altura;
+    protected final double base;
+    protected final double altura;
 
     public Triangulo(String nombre, double base, double altura) {
         super(nombre);
