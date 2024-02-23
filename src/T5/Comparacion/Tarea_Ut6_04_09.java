@@ -43,37 +43,39 @@ public class Tarea_Ut6_04_09 {
                     do {
                         mostrarMenu2();
                         opcion2 = sc.nextInt();
-                    switch (opcion2) {
-                        case 1:
-                            System.out.println(lista.get(grupo));
-                            break;
-                        case 2:
-                            lista.get(grupo).add(crearEstudiante());
-                            System.out.println("Estudiante añadido con exito");
-                            break;
-                        case 3:
-                            System.out.println("Selecciona posicion:");
-                            posicion = sc.nextInt();
-                            lista.get(grupo).add(posicion, crearEstudiante());
-                            break;
-                        case 4:
-                            Collections.sort(lista.get(grupo), new ComparatorDniEstudiante());
-                            System.out.println("Se ha ordenado correctamente");
-                            break;
-                        case 5:
-                            System.out.println("Selecciona posicion:");
-                            posicion = sc.nextInt();
-                            lista.get(grupo).remove(posicion);
-                            System.out.println("Se ha borrado correctamente");
-                            break;
-                        case 6:
-                            lista.get(grupo).clear();
-                            System.out.println("Se han borrado todos los estudiantes de la clase");
-                            break;
-                        case 0:
-                            System.out.println("Adios!!!");
-                            break;
-                    }
+                        switch (opcion2) {
+                            case 1:
+                                for (Estudiante e:lista.get(grupo)) {
+                                    System.out.println(e);
+                                }
+                                break;
+                            case 2:
+                                lista.get(grupo).add(crearEstudiante());
+                                System.out.println("Estudiante añadido con exito");
+                                break;
+                            case 3:
+                                System.out.println("Selecciona posicion:");
+                                posicion = sc.nextInt();
+                                lista.get(grupo).add(posicion, crearEstudiante());
+                                break;
+                            case 4:
+                                Collections.sort(lista.get(grupo), new ComparatorDniEstudiante());
+                                System.out.println("Se ha ordenado correctamente");
+                                break;
+                            case 5:
+                                System.out.println("Selecciona posicion:");
+                                posicion = sc.nextInt();
+                                lista.get(grupo).remove(posicion);
+                                System.out.println("Se ha borrado correctamente");
+                                break;
+                            case 6:
+                                lista.get(grupo).clear();
+                                System.out.println("Se han borrado todos los estudiantes de la clase");
+                                break;
+                            case 0:
+                                System.out.println("Adios!!!");
+                                break;
+                        }
                     }while (opcion2!=0);
                     break;
                 case 5:
@@ -101,6 +103,7 @@ public class Tarea_Ut6_04_09 {
         System.out.println("4.Ordenar el listado de estudiantes de un grupo por NIE");
         System.out.println("5.Eliminar el estudiante de la posición indicada");
         System.out.println("6.Eliminar todos los estudiantes de la clase");
+        System.out.println("0.Salir");
     }
 
     public static Estudiante crearEstudiante() {
