@@ -24,8 +24,7 @@ public class Tarea_Ut6_04_09 {
                     if (lista.isEmpty()) {
                         System.out.println("La lista esta vacia");
                     } else {
-                        Set<String> keys = lista.keySet();
-                        for (String key : keys) {
+                        for (String key : lista.keySet()) {
                             System.out.println(key);
                         }
                     }
