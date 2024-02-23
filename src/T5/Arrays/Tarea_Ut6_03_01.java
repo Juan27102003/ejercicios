@@ -1,6 +1,4 @@
 package T5.Arrays;
-
-import java.sql.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -21,7 +19,6 @@ public class Tarea_Ut6_03_01 {
         int n=0;
             for (int i=0;i<original.length;i++){
                 if (i==indice){
-                    original[i]=Integer.MIN_VALUE;
                     n=1;
                 }else if (n==1){
                     aux[i-1]=original[i];
@@ -29,6 +26,6 @@ public class Tarea_Ut6_03_01 {
                 }else aux[i]=original[i];
             }
         return aux;
-
     }
+
 }
