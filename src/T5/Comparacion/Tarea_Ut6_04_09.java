@@ -40,16 +40,15 @@ public class Tarea_Ut6_04_09 {
                 case 4:
                     System.out.println("Selecciona grupo:");
                     grupo = sc.next();
-                    mostrarMenu2();
-                    opcion2 = sc.nextInt();
+                    do {
+                        mostrarMenu2();
+                        opcion2 = sc.nextInt();
                     switch (opcion2) {
                         case 1:
                             System.out.println(lista.get(grupo));
                             break;
                         case 2:
-                            List<Estudiante> list = new ArrayList<>();
-                            list.add(crearEstudiante());
-                            lista.put(grupo, list);
+                            lista.get(grupo).add(crearEstudiante());
                             System.out.println("Estudiante añadido con exito");
                             break;
                         case 3:
@@ -71,7 +70,11 @@ public class Tarea_Ut6_04_09 {
                             lista.get(grupo).clear();
                             System.out.println("Se han borrado todos los estudiantes de la clase");
                             break;
+                        case 0:
+                            System.out.println("Adios!!!");
+                            break;
                     }
+                    }while (opcion2!=0);
                     break;
                 case 5:
                     System.out.println("Adios!!!");
