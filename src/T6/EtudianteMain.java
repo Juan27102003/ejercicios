@@ -10,8 +10,8 @@ public class EtudianteMain {
                 new FileOutputStream("estudiantes.dat"))
         ) {
             List<Estudiante> grupo = new ArrayList<>();
-            grupo.add(new Estudiante("Chuck Norris", 10));
-            grupo.add(new Estudiante("Mortadelo", 5));
+            grupo.add(new Estudiante("Chuck Norris"));
+            grupo.add(new Estudiante("Mortadelo"));
             oos.writeObject(grupo);
         } catch (IOException e) {
             throw new RuntimeException(e);
