@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.regex.Pattern;
+
 
 public class Ut7_03_07 {
     static Map<String,Empresa> empresas;
@@ -65,7 +65,7 @@ public class Ut7_03_07 {
         Empresa e1=new Empresa(razonSocial,telefono,anyo,nombreContacto);
         if (CIF.matches(formato)){
             empresas.put(CIF,e1);
-            guardarDatos(empresas);
+            guardarDatos();
         }else System.out.println("Formato del CIF incorrecto");
 
     }
@@ -81,7 +81,7 @@ public class Ut7_03_07 {
             String CIF=sc.next();
             if (empresas.containsKey(CIF)){
                 empresas.remove(CIF);
-                guardarDatos(empresas);
+                guardarDatos();
             }else System.out.println("La empresa no existe");
 
     }
@@ -126,7 +126,7 @@ public class Ut7_03_07 {
                     break;
             }
             empresas.putIfAbsent(CIF, e);
-            guardarDatos(empresas);
+            guardarDatos();
         }else System.out.println("La empresa no existe");
     }
     private static void mostrarMenu2(){
@@ -145,7 +145,7 @@ public class Ut7_03_07 {
             return new HashMap<String,Empresa>();
         }
     }
-    private static void guardarDatos(Map<String, Empresa> empresas){
+    private static void guardarDatos(){
         try(ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream("empresas.dat"))){
             oos.writeObject(empresas);
         } catch (IOException e) {
