@@ -1,4 +1,4 @@
-package T7;
+package T7.Ut8_01;
 
 import javax.swing.*;
 

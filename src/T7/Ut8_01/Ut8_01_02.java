@@ -1,8 +1,8 @@
-package T7;
+package T7.Ut8_01;
 
 import javax.swing.*;
 
-public class Ut8_01_01 {
+public class Ut8_01_02 {
     public static void main(String[] args) {
         JFrame ventana = new JFrame();
         JLabel etiqueta = new JLabel("¡Hola mundo Swing!", JLabel.CENTER);
@@ -11,5 +11,9 @@ public class Ut8_01_01 {
         ventana.add(etiqueta);
         ventana.setVisible(true);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JDialog hija = new JDialog(ventana);
+        hija.setSize(400, 300);
+        hija.setTitle("Ventana hija");
+        hija.setVisible(true);
     }
 }

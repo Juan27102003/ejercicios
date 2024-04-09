@@ -1,15 +1,15 @@
-package T7;
+package T7.Ut8_01;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class Ut8_01_03c {
+public class Ut8_01_03a {
     public static void main(String[] args) {
         JFrame ventana = new JFrame();
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        ventana.setSize(400, 300);
+        ventana.setSize(600, 500);
         ventana.setTitle("ut8_01_03");
-        ventana.setLayout(new GridLayout(3, 2));
+        ventana.setLayout(new FlowLayout());
         ventana.add(new JButton("Botón 1"));
         ventana.add(new JButton("Botón 2"));
         ventana.add(new JButton("Botón 3"));
