@@ -87,7 +87,7 @@ public class CocheDaoImpl implements CocheDao{
         Coche coche = null;
         try {
             coche = new Coche();
-            ps = connection.prepareStatement("select  * from coche where matricula=?");
+            ps = connection.prepareStatement("select * from coche where matricula=?");
             ps.setString(1, matricula);
             rs = ps.executeQuery();
             while (rs.next()) {
