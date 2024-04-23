@@ -1,7 +1,6 @@
 package model.dao;
 
 import Datasource.DataSource;
-import model.entities.Cliente;
 
 public class DAOFactory {
 
