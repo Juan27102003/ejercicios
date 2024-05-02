@@ -1,8 +1,7 @@
-package model.dao;
+package T9.model.dao;
 
-import Datasource.DataSource;
-import model.entities.Cliente;
-import model.entities.Coche;
+import T9.Datasource.DataSource;
+import T9.model.entities.Cliente;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

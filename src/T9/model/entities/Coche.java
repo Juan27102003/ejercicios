@@ -1,4 +1,4 @@
-package model.entities;
+package T9.model.entities;
 
 import java.util.Date;
 import java.util.Objects;
@@ -12,6 +12,12 @@ public class Coche {
     private boolean vendido;
 
     public Coche() {
+    }
+
+    public Coche(String matricula, String marca, String modelo) {
+        this.matricula = matricula;
+        this.marca = marca;
+        this.modelo = modelo;
     }
 
     public Coche(String matricula, String marca, String modelo, Date anio, double precio, boolean vendido) {

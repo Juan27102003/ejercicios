@@ -1,6 +1,6 @@
-package model.services;
+package T9.model.services;
 
-import model.entities.Cliente;
+import T9.model.entities.Cliente;
 
 import java.util.List;
 
